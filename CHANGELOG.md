@@ -4,6 +4,12 @@ Motion adheres to [Semantic Versioning](http://semver.org/).
 
 Undocumented APIs should be considered internal and may change without warning.
 
+## [Unreleased]
+
+### Fixed
+
+-   `cubicBezier`: Now exact and no longer quantised. The bisection search (12 iterations) is replaced by the closed-form solver from `bezier-easing` 3.2, which is ~3x faster per call.
+
 ## [14.0.0] 2026-10-02
 
 ### Changed
